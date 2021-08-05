@@ -1,6 +1,6 @@
 # Raspberry PI video recorder with VNC-visible previews.
 
-Though `raspivid` on Raspberry PI records videos, its preview window is invisible in VNC remote sessions as whey were laid on the hardware video output signal. However display (monitors) are sometimes inaccessible on the video-recording site where preview may also be needed.
+Preview via VNC remote sessions during video-recording is not easy. Though `raspivid` on Raspberry PI can record videos, its preview is overlaid on RPI's hardware video output signal, and sometimes we have to preview without monitors available.
 
 This script calls OpenCV that draws preview on RPI's GUI desktops, meaning that it's visible via VNC sessions. During the preview, several parameters can be adjusted by keyboard inputs in real time, those changes also take effect immediately on the recorded videos. 
 
